@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Clique</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #botao {
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        #botao:hover {
+            background-color: #0056b3;
+        }
+        #pontuacao {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo de Clique</h1>
+    <p id="pontuacao">Pontuação: 0</p>
+    <button id="botao">Clique aqui!</button>
+
+    <script>
+        let pontos = 0;
+
+        // Atualiza a pontuação ao clicar no botão
+        document.getElementById('botao').addEventListener('click', () => {
+            pontos++;
+            document.getElementById('pontuacao').textContent = Pontuação: ${pontos};
+        });
+    </script>
+</body>
+</html>
